@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+
+    background-color: rgb(3, 27, 27);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    color: #d6e5ff;
+}
+
+h1 {
+    margin: 0 2rem 0 0;
+    color: #d6e5ff;
+    font-size: 3em;
+}
+
+ul {
+    padding: 0;
+    color: #94bbff;
+    font-weight: bold;
+    list-style-type: square;
+}
+
+
+li {
+    margin-bottom: .5rem;
+    font-size: 1rem;
+}
+
+a {
+    color: #94bbff;
+}
+
+nav {
+    width: fit-content;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.div-padd {
+    padding: 0;
+}
+
+#dino-home {
+    margin-left: 2rem;
+    display: flex;
+    align-self: center;
+}
+
+#header-title {
+    display: flex;
+    align-self: center;
+}
+
+#div-back {
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+
+#div-content {
+    display: flex;
+    justify-content: center;
+}
+
+#back {
+    height: 2rem;
+    color: #94bbff;
+    text-decoration-line: none;
+}
+
+
+

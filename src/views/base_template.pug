@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+	head
+		block ofHead
+			meta(charset="UTF-8")
+			meta(http-equiv="X-UA-Compatible", content="IE=edge")
+			meta(name="viewport", content="width=device-width, initial-scale=1.0")
+			link(rel="icon" type="ico" href="/images/Dino.ico")
+			link(rel="stylesheet", href="/styles/styles.css")
+			title= title
+
+	body
+		header
+			div(id='dino-home' class='div-padd')
+				a(href="/"): img(src="/images/BigDino.png", alt="DinoHome")
+
+			div(id='header-title' class='div-padd')
+				h1 #{main_title}
+			
+		main
+			div(id='div-back')
+				if path != '/'
+					a(id='back' href='../') &larr;
+			
+			div(id='div-content')
+				block ofContent
+					nav
+						ul
+							li: a(href='/eje-dgr-09/') eje-dgr-09
+							li: a(href='/eje-dgr-10/') eje-dgr-10
+		
+		include includes/footer.pug
+				
+
+			
+					
+						
+              
+

@@ -1,0 +1,31 @@
+extends ../base_template.pug
+
+block append ofHead
+	link(rel="stylesheet", href="/styles/eje-dgr-10.css")
+	
+block ofContent
+	div(id='div-case', class='gen-border')
+		div(id='div-display')
+			div(id='div-header-display')
+				label Basic-Calculator
+				label Deno  
+
+			div(class='div-input')
+				label(for="number1") NUM1
+				input(type="text", id='number1', class='div-deep')
+
+			div(class='div-input')
+				label(for="number2") NUM2
+				input(type="text", id='number2', class='div-deep')
+
+			div(id='div-ans', class='div-input')
+				label ANS
+				label(id='label-ans', class='div-deep') 0  
+
+		div(id='div-btn')
+			button(id='btn-add', class='btn-deep') +
+			button(id='btn-sub', class='btn-deep') -
+			button(id='btn-product', class='btn-deep') &times;
+			button(id='btn-division', class='btn-deep') &divide;
+				
+	script(src='/JS/eje_dgr_10.js')
